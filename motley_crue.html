@@ -12,33 +12,38 @@
     <title>Motlëy Crue</title>
 </head>
 <body>
-    <header class="container sticky-top" id="cabecalho">
+    <header class="container navbar sticky-top navbar-expand-lg" id="cabecalho">
         <a href="./index.html">
-            <img class="logoIcon" src="./Imagens/Wild Side Logo Preto.png" alt="Logo banda Wild Side">
+            <img class="logoIcon navbar-brand" src="./Imagens/Wild Side Logo Preto.png" alt="Logo banda Wild Side">
         </a>
-        <ul class="menuList">
-            <li>
-                <a href="setlist.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
-                Setlist</a>
-            </li>
-            <li>
-                <a href="./mapaPalco.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
-                Mapa do Palco</a>
-            </li>
-            <li>
-                <a href="./motley_crue.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
-                Mötley Crüe</a>
-            </li>
-            <li>
-                <a href="./contato.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
-                Contato</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-collapse collapse justify-content-end" id="navegacao">
+            <ul class="nav nav-pills d-block d-md-flex menuList">
+                <li class="nav-item">
+                    <a href="setlist.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
+                    Setlist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./mapaPalco.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
+                    Mapa do Palco</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./motley_crue.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
+                    Mötley Crüe</a>
+                </li>
+                <li>
+                    <a href="./contato.html"><img class="iconPentagram" src="./Imagens/pentagrama.png" alt="icone pentagrama">
+                    Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div class="container" id="cover">
         <h2>Mas afinal... O QUE É MÖTLEY CRÜE?<span>_</span></h2>
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="carousel slide carousel-fade carousel-palco" id="carousel" data-bs-ride="carousel">
                     <div class="carousel-inner mt-4">
                         <div class="carousel-item active" data-bs-interval="3000">
@@ -68,7 +73,7 @@
                     </div>
                     </div>
             </div>
-            <div class="mt-3 col-6">
+            <div class="mt-3 col-md-6 texto-motley">
                 <p>
                         Fundada em <span>1981</span>, em Los Angeles - Califórnia, Mötley Crüe é
                     uma das bandas de maior relevância do gênero <span>Hard Rock</span> e

@@ -12,11 +12,7 @@ h1{
 #banda h2{
     font-size: .8em;
 }
-.container{
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 .special-icon{
     color: #EFE3CB;
 }
@@ -224,7 +220,12 @@ header{
 
 
 /*Setlist*/
-
+.texto-setlist img{
+    display: none;
+}
+.image-setlist{
+    display: none;
+}
 
 /*Mapa de Palco*/
 .carousel-palco, .carousel-palco img{
@@ -251,19 +252,20 @@ header{
 /*Contato*/
 .contato-lista ul{
     list-style: none;
+    padding-left: 0px;
 }
 .contato-lista a{
     text-decoration: none;
     color: #020104;
     font-size: 2em;
 }
-.mediaKit{
-    font-size: 1.4em;
+#contato p{
+    font-size: 1.6em;
 }
 .mediaKit  a{
     text-decoration: none;
     color: #F50326;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 /*footer das pages*/
@@ -279,22 +281,118 @@ header{
 }
 
 @media screen and (max-width:820px){
-    #banda .carousel{
-        display: none;
+    .navbar-toggler{
+        margin-right: 2em;
+    }
+    .nav-item{
+        margin-left: 2em;
     }
     #frase{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .linhaDoTempo img{
         margin-left: 0;
     }
+    .texto-sobre{
+        font-size: 1.2em;
+    }
 
     /*SETLIST*/
-    .carousel-setlist {
-        width: auto;
+    .image-setlist{
+        width: 100%;
+        margin-top: 30%;
+        border-radius: 6px;
     }
+    .carousel-setlist{
+        display: none;
+    }
+    /*MAPA PALCO*/
+    .footer-palco{
+        position: fixed;
+        bottom: 0;
+        left: 40%;
+    }
+
+    /*Motley CRUE*/
+    .discografia img{
+        width: 100%;
+    }
+    .carousel-palco {
+        width: 23.125em;
+        border-radius: .5em;
+    }
+    .carousel-palco img {
+        width: 100%;
+        border-radius: .5em;
+    }
+
+    /*CONTATO*/
+    .last-footer{
+        margin-left: 5em;
+    }
+    
 }
 
+
+@media screen and (max-width:430px){
+    .navbar-toggler{
+        margin-right: 2em;
+    }
+    .nav-item{
+        margin-left: 2em;
+    }
+    #banda .carousel{
+        display: none;
+    }
+    .linhaDoTempo h4{
+        font-size: 1.3em;
+    }
+    .quem-somos > h4{
+        font-size: 1.3em;
+        margin-left: 1em;
+    }
+    #obrigado p {
+        font-size: 1em;
+    }
+    #obrigado img{
+        margin-left: 1.2em;
+    }
+    
+    
+    /*SETLIST*/
+    .texto-setlist img{
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+    /*MAPA DE PALCO*/
+    .footer-palco{
+        position: fixed;
+        bottom: 0;
+        left: 30%;
+    }
+    
+    
+    /*Motley CRUE*/
+    .carousel-palco {
+        display: none;
+    }
+    
+    /*CONTATO*/
+    .contato-lista a{
+        font-size: 1.2em;
+    }
+    #contato p{
+        font-size: 1em;
+    }
+    .mediaKit  a{
+        font-size: 1em;
+    }
+    .last-footer{
+        margin-left: 0;
+    }
+}
 
 
 
